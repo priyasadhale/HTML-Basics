@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Formatting</title>
+</head>
+<body>
+
+<!-- <font size="7"> 
+font, em, b tags are element-level tags. that is they affect the text enclosed
+but don't add any blank line,    
+-->
+    <h3>   
+        <!-- heading, paragraph tags are called as block-leve tags. a line is added
+        after/before the text -->
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+Voluptate deleniti sit placeat alias impedit numquam nesciunt maxime
+ molestiae minus. Alias quibusdam earum fugit laboriosam deserunt 
+ nesciunt aliquam magni ipsam nisi.</h3>
+<!-- </font> -->
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, minima maiores voluptas cum laboriosam.
+
+<!-- Definition/ Description Lists -->
+<dl>
+    <dt>
+        <b>
+            <i>The closing tag:</i>
+        </b>
+    </dt>
+    <dd> 
+        This is the same as the opening tag, 
+    except that it includes a forward slash before the element name. 
+    This marks where the element ends. Failing to include a closing tag is a
+    common beginner error that can produce peculiar resul
+</dd>
+
+<dt>
+        <b>
+            <em>
+                 The content:
+            </em>           
+        </b>
+</dt>
+<dd>
+    This is the content of the element. In this example, it is the paragraph text.
+</dd>
+ 
+</dl>
+
+    <!-- italic, underline, strong tags -->
+    <p>
+        <u>Underline</u>
+        <strong>Strong text</strong>
+    </p>
+
+    <!-- adding quotes to the page -->
+    <!-- Hello and welcome to my motivation page. As Confucius' quotes site says:
+
+It does not matter how slowly you go as long as you do not stop.
+
+I also love the concept of positive thinking, and The Need To Eliminate Negative Self Talk (as mentioned in Affirmations for Positive Thinking.)  -->
+        
+    
+    <!-- the q element with cite attribute taking http://www.brainyquote.com/quotes/authors/c/confucius.html -->
+<q cite=" http://www.brainyquote.com/quotes/authors/c/confucius.html">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatem sequi, aliquam enim facilis, blanditiis eius perspiciatis animi aperiam in dolores minus veniam cum excepturi? Dignissimos corrupti dicta incidunt aut?
+</q>
+
+    <!-- using the blockquote with cite attribute -->
+
+<blockquote cite=" http://www.brainyquote.com/quotes/authors/c/confucius.html">
+    Hello and welcome to my motivation page. As Confucius' quotes site says:
+
+It does not matter how slowly you go as long as you do not stop.
+
+I also love the concept of positive thinking, and The Need To Eliminate Negative Self Talk (as mentioned in Affirmations for Positive Thinking.)  
+        
+</blockquote>
+
+<!-- Abbreviation with abbr tag -->
+<li>HTML - HyperText Markup Language</li>
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+</dl>
+
+<abbr title="html">
+    HTML
+</abbr> HyperText Markup Language
+
+<!-- address, super and subscript -->
+<address>
+    Chris Mills<br>
+    Manchester<br>
+    The Grim North<br>
+    UK
+</address>
+
+<!-- representing computer code -->
+
+<br>
+
+&lt;code&gt;
+    : For marking up generic pieces of computer code. <br>
+    &lt;pre&gt;: For retaining whitespace (generally code blocks) — if you use indentation or excess whitespace inside your text, browsers will ignore it and you will not see it on your rendered page. If you wrap the text in <pre></pre> tags however, your whitespace will be rendered identically to how you see it in your text editor.
+   <br> &lt;var&gt;: For specifically marking up variable names.
+    <br><kbd>: For marking up keyboard (and other types of) input entered into the computer.
+  <br>  <samp>: For marking up the output of a computer program.
+
+<hr>
+
+<pre>
+    main(){
+        printf("hello world");
+    }
+</pre>
+
+<pre><code>const para = document.querySelector('p');
+
+    para.onclick = function() {
+      alert('Owww, stop poking me!');
+    }</code></pre>
+    
+    <p>
+      You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+      <code>&lt;center&gt;</code>.
+    </p>
+    
+    <p>
+      In the above JavaScript example, <var>para</var> represents a paragraph
+      element.
+    </p>
+    
+    <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+    
+    <pre>$ <kbd>ping mozilla.org</kbd>
+    <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+    64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+</body>
+</html>
